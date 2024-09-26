@@ -492,3 +492,9 @@ ls -al
 date
 ls -alfr
 cd ..
+./cronetask.sh 
+pwd
+ls -al
+crontab -e
+lsu
+sds
