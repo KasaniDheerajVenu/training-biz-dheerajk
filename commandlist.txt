@@ -505,3 +505,5 @@ vi cronetask.sh
 ls -al
 ./cronetask.sh 
 ls -opoi
+./cronetask.sh 
+crontab -e
