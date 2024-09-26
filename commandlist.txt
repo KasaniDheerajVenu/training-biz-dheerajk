@@ -503,3 +503,5 @@ crontab -e
 vi cronetask.sh 
 ./cronetask.sh 
 ls -al
+./cronetask.sh 
+ls -opoi
