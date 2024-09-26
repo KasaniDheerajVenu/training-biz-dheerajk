@@ -477,3 +477,5 @@ cat cronetask.sh
 vi cronetask.sh 
 ./cronetask.sh 
 cat cronetask.sh 
+./cronetask.sh 
+ls -dee
