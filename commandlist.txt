@@ -501,3 +501,5 @@ sds
 vi cronetask.sh 
 crontab -e
 vi cronetask.sh 
+./cronetask.sh 
+ls -al
