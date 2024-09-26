@@ -498,3 +498,6 @@ ls -al
 crontab -e
 lsu
 sds
+vi cronetask.sh 
+crontab -e
+vi cronetask.sh 
