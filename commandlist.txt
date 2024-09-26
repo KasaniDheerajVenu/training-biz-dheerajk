@@ -479,3 +479,9 @@ vi cronetask.sh
 cat cronetask.sh 
 ./cronetask.sh 
 ls -dee
+./cronetask.sh 
+ls -al
+cd training/training-biz-dheerajk/
+rm commandlist.txt 
+cd ..
+ls -al
