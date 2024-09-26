@@ -475,3 +475,5 @@ cd ..
 ls -al
 cat cronetask.sh 
 vi cronetask.sh 
+./cronetask.sh 
+cat cronetask.sh 
