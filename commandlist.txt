@@ -507,3 +507,5 @@ ls -al
 ls -opoi
 ./cronetask.sh 
 crontab -e
+ls -al
+crontab -e
