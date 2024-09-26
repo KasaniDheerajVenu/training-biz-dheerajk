@@ -485,3 +485,9 @@ cd training/training-biz-dheerajk/
 rm commandlist.txt 
 cd ..
 ls -al
+./cronetask.sh 
+ls -al
+cd training/training-biz-dheerajk/
+ls -al
+date
+ls -alfr
