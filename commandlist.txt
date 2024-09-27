@@ -511,3 +511,4 @@ ls -al
 crontab -e
 vi cronetask.sh 
 ls -al
+cat cronetask.sh 
