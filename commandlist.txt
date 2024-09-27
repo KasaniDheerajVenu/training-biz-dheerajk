@@ -512,3 +512,5 @@ crontab -e
 vi cronetask.sh 
 ls -al
 cat cronetask.sh 
+crontab -e
+crontab -l
