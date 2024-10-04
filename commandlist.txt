@@ -532,3 +532,4 @@ sudo dnf install ssmtp
 sudo dnf install mailx -y
 sudo dnf group list
 sudo dnf list available | grep mail
+sudo vi /etc/mail/sendmail.mc
