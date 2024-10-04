@@ -540,3 +540,4 @@ sudo dnf install sendmail-cf -y
 sudo make -C /etc/mail
 sudo systemctl restart sendmail
 echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
