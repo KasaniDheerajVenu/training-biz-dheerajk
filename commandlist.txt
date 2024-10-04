@@ -542,3 +542,14 @@ sudo systemctl restart sendmail
 echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
 sudo tail -f /var/log/maillog
 sudo vi /etc/mail/sendmail.mc
+sudo make -C /etc/mail
+sudo systemctl restart sendmail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo vi /etc/mail/sendmail.mc
+sudo make -C /etc/mail
+sudo systemctl restart sendmail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
+sudo vi /etc/mail/sendmail.mc
+sudo make -C /etc/mail
+sudo nano /etc/mail/authinfo
