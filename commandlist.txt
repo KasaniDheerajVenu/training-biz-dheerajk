@@ -590,3 +590,13 @@ sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
 sudo make -C /etc/mail
 sudo systemctl restart sendmail
 mail -v
+sendmail -v
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
+sudo vi /etc/mail/authinfo
+sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
+sudo make -C /etc/mail
+sudo systemctl restart sendmail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
+yum install cyrus-sasl-plain
