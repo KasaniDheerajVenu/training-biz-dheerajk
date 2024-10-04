@@ -533,3 +533,10 @@ sudo dnf install mailx -y
 sudo dnf group list
 sudo dnf list available | grep mail
 sudo vi /etc/mail/sendmail.mc
+sudo vi /etc/mail/genericstable
+sudo makemap hash /etc/mail/genericstable < /etc/mail/genericstable
+sudo make -C /etc/mail
+sudo dnf install sendmail-cf -y
+sudo make -C /etc/mail
+sudo systemctl restart sendmail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
