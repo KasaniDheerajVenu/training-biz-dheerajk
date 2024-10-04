@@ -553,3 +553,20 @@ sudo tail -f /var/log/maillog
 sudo vi /etc/mail/sendmail.mc
 sudo make -C /etc/mail
 sudo nano /etc/mail/authinfo
+sudo vi /etc/mail/authinfo
+sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
+sudo systemctl restart sendmail
+sudo make -C /etc/mail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
+sudo vi /etc/mail/sendmail.mc
+sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
+sudo make -C /etc/mail
+sudo systemctl restart sendmail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
+sudo vi /etc/mail/sendmail.mc
+sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
+sudo make -C /etc/mail
+sudo systemctl restart sendmail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
