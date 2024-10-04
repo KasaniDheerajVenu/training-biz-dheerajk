@@ -517,3 +517,10 @@ crontab -l
 history
 crontab -l
 sudo yum install mailx
+sudo yum update -y
+sudo yum install mailx -y
+sudo apt-get install mailutils -y
+sudo yum install mailutils -y
+sudo yum install sendmail -y
+sudo systemctl start sendmail
+sudo systemctl enable sendmail
