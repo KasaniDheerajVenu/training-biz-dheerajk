@@ -570,3 +570,23 @@ sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
 sudo make -C /etc/mail
 sudo systemctl restart sendmail
 echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
+sudo chmod 600 /etc/mail/authinfo
+sudo chown root:mail /etc/mail/authinfo
+sudo systemctl restart sendmail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
+sudo make -C /etc/mail
+sudo vi /etc/mail/authinfo
+sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
+sudo chmod 644 /etc/mail/authinfo
+sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
+sudo chmod 600 /etc/mail/authinfo
+sudo make -C /etc/mail
+sudo systemctl restart sendmail
+sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
+sudo chmod 644 /etc/mail/authinfo
+sudo makemap hash /etc/mail/authinfo < /etc/mail/authinfo
+sudo make -C /etc/mail
+sudo systemctl restart sendmail
+mail -v
