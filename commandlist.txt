@@ -516,3 +516,4 @@ crontab -e
 crontab -l
 history
 crontab -l
+sudo yum install mailx
