@@ -608,3 +608,8 @@ ls /etc/mail/tls/starttls.m4
 sudo mkdir -p /etc/mail/tls
 sudo cp /path/to/found/starttls.m4 /etc/mail/tls/starttls.m4
 sudo find / -name starttls.m4
+sudo vi /etc/mail/sendmail.mc
+sudo tail -f /var/log/maillog
+sudo systemctl restart sendmail
+echo "Test email from EC2" | sendmail -v dheerajvenukasani@gmail.com
+sudo tail -f /var/log/maillog
