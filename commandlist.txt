@@ -524,3 +524,11 @@ sudo yum install mailutils -y
 sudo yum install sendmail -y
 sudo systemctl start sendmail
 sudo systemctl enable sendmail
+echo "This is a test email" | sendmail -v sunnykasani15@gmail.com
+sudo yum install ssmtp -y
+sudo amazon-linux-extras install epel -y
+sudo dnf install epel-release -y
+sudo dnf install ssmtp
+sudo dnf install mailx -y
+sudo dnf group list
+sudo dnf list available | grep mail
